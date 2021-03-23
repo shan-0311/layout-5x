@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"  href="css/reset.css">
+
+  <title>Document</title>
+<style>
+
+h1 {font-size: 60px;
+    color: rgb(255, 255, 255);
+    line-height: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+h2 {font-size: 30px;
+    color: rgb(63, 64, 66);
+    line-height: 70px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;}
+
+.header{
+  width:100%;
+  height:70px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+}
+.header img{
+  width: 50px;
+  height: 40px;
+  margin-top: 14px ;
+}
+
+.header p{
+  margin-top: 25px;
+  font-size: 18px ;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  }
+
+  .header nav{
+  margin-left: auto;
+  background-color: rgb(255, 255, 255);
+  padding: 30px;
+  font-size: 0px;
+  }
+
+  .header nav a{
+    margin: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+  }
+
+  .banner img{
+    width: 100%;
+  }
+
+.banner .item{
+  position:absolute;
+  left:300px; 
+  top:150px;}
+
+.banner .item p{
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.about{text-align: center;
+  line-height: 40px;
+
+}
+.about p{
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(63, 64, 66);
+}
+
+.about .wrap{
+  display: flex;
+}
+.about img{
+  width: 50%;
+  padding-top: 40px;
+}
+
+.about .item{
+  text-align: center;
+}
+
+.about .wrap h3{
+  font-size: 20px;
+  color: rgb(63, 64, 66);
+  line-height: 50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+
+.about .wrap p{
+  font-size: 16px;
+  color: rgb(63, 64, 66);
+  line-height: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-left: 100px;  
+  padding-right: 100px ;
+  margin-bottom: 200px;
+}
+.teacher{
+background-color: rgb(247, 247, 247);
+height: 200px;
+padding-right: 300px;
+}
+
+.teacher h2{
+  padding-left: 300px;
+  font-size: 30px;
+  line-height: 80px;
+}
+.teacher p{
+  padding-left: 300px;
+  font-size: 20px;
+  line-height: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+  height: 600px;
+  background-color: rgb(247, 247, 247);
+}
+.container .content{
+  margin: auto;
+  display: flex;
+ width: 800px;
+ height: 500px;
+ background-color: rgb(255, 255, 255);
+  
+}
+
+.container .content .pic{
+  background-color: rgb(255, 255, 255);
+  padding: 40px;
+}
+
+.container .content .pic img{
+  width: 100%;
+  border-radius: 50%;
+}
+
+.container .content .txt{
+color: rgb(49, 50, 50);
+background-color: rgb(255, 255, 255);
+ margin: auto;
+ margin-top: 0px;
+ text-align: left;
+ line-height: 30px;
+ padding-left: 20px;
+ padding-right: 30px;
+}
+.container .content .txt h2{
+  font-size: 15px;
+  
+}
+.container .content .txt h3{
+  font-size: 15px;
+}
+.container .content .txt p{
+  font-size: 15px;
+}
+
+.lesson1{
+  background-color:rgb(44, 44, 45) ;
+}
+.lesson1 h4{
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  line-height: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-top: 30px;
+  padding-left: 50px;
+  font-weight: bold;
+}
+.lesson1  p{
+  width: 500px;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  line-height: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-top: 30px;
+  padding-left: 50px;
+  
+}
+
+
+.lesson1 .wrap .item2{
+  margin-left: 700px;
+  background-color: rgb(228, 42, 22);
+  width: 600px;
+  height: 200px;
+} 
+
+.lesson1 h5{
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-top: 30px;
+  padding-left: 50px;
+}
+
+.lesson2 .wrap {
+  height: 600px;
+  padding-top: 80px;
+  background-color:rgb(44, 44, 45) ;
+  display: flex;
+}
+
+.lesson2 .wrap .item{
+  padding-left: 22px;
+}
+
+.lesson2 p{
+  padding-left:80px;
+  background-color: rgb(44, 44, 45);
+  font-size: 28px;
+  color: rgb(255, 255, 255);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+
+.lesson2 .wrap .item h3{
+ font-size: 18px;
+ line-height: 28px;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ padding-left: 22px;
+
+}
+
+.lesson2 .wrap .item h4{
+ font-size: 18px;
+ line-height: 28px;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ padding-left: 22px;
+}
+
+.lesson2 .wrap .item h5{
+ font-size: 18px;
+ line-height: 28px;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ padding-left: 22px;
+}
+
+.lesson2 .wrap .item .pic{
+  background-color: rgb(255, 255, 255);
+  height: 400px;
+  margin: 10px;
+  border-radius: 20px;
+}
+
+.lesson2 .wrap .item .pic img {
+  width:430px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.txt{
+  margin-left: 580px;
+  margin-right: 700px;
+  height: 50px;
+  line-height: 50px;
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  background-color: red;
+  text-align: center;
+  border-radius: 10px;
+  }
+
+
+
+.path .wrap{
+  display: flex;  
+  background-color: rgb(255, 255, 255);
+  height: 500px;
+}
+
+.path .wrap .item{
+  height: 400px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  margin:10px;
+  padding: 0px;
+  width:100%;
+  border: 0.5px solid rgb(187, 187, 187);
+}
+
+.path img{
+  border-radius: 10px;
+  width: 100%;
+}
+.path .wrap .item p{
+  color: red;
+  font-size: 16px;
+  line-height: 80px;
+  padding-left: 23px;
+}
+
+.path h2{
+  padding-left: 50px;
+}
+
+.path p{
+  padding-left: 50px;
+  font-size: 20px;
+  color: rgb(63, 64, 66);
+  background-color: rgb(255, 255, 255);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+
+.path h3{
+  padding-left: 50px;
+  font-size: 20px;
+  color: rgb(63, 64, 66);
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.path h4{
+  font-size: 16px;
+  color: rgb(63, 64, 66);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-left: 50px;  
+  padding-right: 100px ;
+}
+
+
+.feeback .wrap{
+  background-color: rgb(255, 255, 255);
+  height: 400px;
+}
+.feeback h2{
+  text-align: center;
+}
+
+.feeback .wrap .pic{
+  width: 300px;
+  height: 200px;
+  margin: 30px;
+  padding-right: 10px;
+  padding-left:10px ;
+  padding-top:10px ;
+  background-color: rgb(255, 255, 255);
+  font-size: 20px;
+  border:0.5px solid rgb(237, 235, 235);
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(48, 47, 47);
+  line-height: 25px;
+}
+
+
+.footer .wrap .item{
+  width: 700px;
+  line-height: 40px;
+}
+.footer .wrap .item p{
+    font-size: 15px;
+  }
+.footer .wrap .col{
+  width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  }
+
+.footer .wrap .col h2{
+  color: aliceblue;
+  font-size: 15px;
+  text-align: left;
+  padding-left: 100px;
+}
+.footer .wrap .col .col1 p{
+  line-height: 35px;
+  font-size: 15px;
+  padding-left: 100px;
+
+}
+</style>
+
+</head>
+<body>
+  
+  <div class="header">
+    <a href="#" class="logo"></a>
+    <img src="https://60503225c3ba680007f5a110--5xtraining.netlify.app/_next/static/images/icon-e61ff85475e1643f66fb28705f6050de.png" alt=""> 
+    <p> 五倍紅寶石 · 專業程式教育機構</p>   
+    <nav>
+      <a href="">全方位培訓營</a>
+      <a href="">ASTRO Camp</a>
+      <a href="">線上課程</a>
+      <a href="">短期課程</a>
+      <a href="">專欄文章</a>
+      <a href="">最新消息</a>
+    </nav>
+  </div>
+
+  <div class="banner">
+    <img src="https://60503225c3ba680007f5a110--5xtraining.netlify.app/_next/static/images/banner-home-aca80ad097b4d77ffa3b82879b5d14a8.jpg"/>
+
+    <div class="item"><h1>五倍學習，突破你的可能性</h1>
+    <p>掌握實戰經驗，從初心素人到業界接軌，讓專業師資為你重新定義程式教育。</p>
+    </div>
+  </div>
+
+
+  <div class="about">
+    <h2>不只停留在教你釣魚，更引領你乘風破浪</h2>
+    <p>我們不藏私的教學，讓所有人都能發揮超越五倍的價值。</p>
+    <div class="wrap">
+      <div class="item">
+        <img src="https://60503225c3ba680007f5a110--5xtraining.netlify.app/_next/static/images/learning-145b2bca330596c38a73e92e35c8e42d.png" alt="">
+        <h3>鍛鍊實力，主導學習</h3>
+        <p>搭配最新技術版本，掌握業界脈動，與需求緊密結合，鍛鍊程式實力。</p>
+      </div>
+      <div class="item">
+        <img src="https://60503225c3ba680007f5a110--5xtraining.netlify.app/_next/static/images/plan-ad32f52a511fde40f36d5e55302554f4.png" alt="" alt="">
+        <h3>完整規劃，絕不漏接</h3>
+        <p>線上補課、線下討論與社群活動，確保學員擁有充份且多元的學習資源和支持系統。</p>
+      </div>
+      <div class="item">
+        <img src="https://60503225c3ba680007f5a110--5xtraining.netlify.app/_next/static/images/challenge-4ead379b6828fce2e2b000cb65c89615.png" alt="" alt="">
+        <h3>挑戰困境，突破職涯</h3>
+        <p>無論新手塊領域轉職，或在職工程師深度進修，讓五倍為你解構學習，突破困境。</p>
+      </div>
+    </div>
+  </div>
+    
+<div class="teacher">
+  <h2>講師陣容</h2>
+  <p>我們的講師長期專注於網站開發技術領域，透過研討會、社群演講及授課方式將技術知識分享給更多人知道，讓更多人了解各個技術的美好之處。
+  </p>
+</div>
+
+  <div class="container">
+    <div class="content">
+      <div class="pic"><img src="img/amos.png" alt=""></div>
+      <div class="txt">
+        <h2> HTML / CSS 講師</h2>
+        <h3>李建杭 (Amos Lee)</h3>
+        <p> 從視覺設計轉職前端的斜槓開發者，活躍於臺灣各大技術研討會，熟稔 HTML & CSS、Bootstrap、RWD、CSS3 等，為國內知名前端技術講師。
+          2018 年成為 Youtuber，致力於使用簡單易懂的方式讓新手能夠輕鬆學習前端開發技能。</p>
+          <p>iT 邦幫忙鐵人賽連續三屆冠軍、連續兩屆優選，於 2020 出版「都能懂的 CSS 選取器：金魚都能懂了你還怕學不會嗎（iT邦幫忙鐵人賽系列書）」一書，除了熱衷於牛排的熟成，目前日益精進於釣魚技能。</p>
+          <p>講師其他課程</p> 
+      </div>
+    </div>
+  </div>
+
+<div class="lesson1">
+  <div class="wrap">
+    <div class="item1">
+      <h4>短期實體課程</h4>
+      <p>目標清晰的短期課程，針對單一技術所開設。適合在職進修的工程師、PM，或對網頁設計有興趣的你。</p>
+    </div>
+    <div class="item2">
+      <h5>後端課程</h5>
+      <p>專屬五倍的後端課程 Ruby on Rails ，一起踏入後端領域吧！</p>
+    </div>
+  </div>
+</div>
+
+<div class="lesson2">
+  <p>近期課程</p>
+  <div class="wrap">
+    <div class="item">
+    <div class="pic"> <img src="img/img-09.jpg" alt=""> 
+    <h3>2021/4月班 2021/10月班</h3>
+    <h4>講師：李建杭（Amos Lee）</h4>
+    <h5>入門課程 ></h5>
+    </div>
+  </div>
+  <div class="item">
+    <div class="pic"> <img src="img/img-10.jpg" alt="">
+    <h3>2021/5月班</h3>
+    <h4>講師：李建杭（Amos Lee）</h4> 
+    <h5>入門課程 ></h5>
+    </div>
+  </div>
+    <div class="item">
+      <div class="pic"> <img src="img/img-11.jpg" alt="">
+    <h3>2021/5月班</h3>
+    <h4>講師：許國政（Kuro Hsu）</h4>
+    <h5>進階課程 ></h5>
+    
+  </div>
+  </div> 
+  
+ </div>
+<div class="txt">看更多課程</div> 
+  
+
+<div class="path">
+  <h2>掌握自己的學習路徑</h2>
+  <p>針對不同需求的學員，五倍規劃了多元且完整的學習路徑：從前端到後端，全方面的包套課程，與彈性的線上課程、假日班，任您自由選擇。</p>
+  <div class="wrap">
+    <div class="item"> <img src="img/img-05.png" alt=""> 
+    <h3>線上課程</h3>
+    <h4>不限時間、地點，自己掌握學習進度。課程內容包含前後端課程，附加完課即提供免費履歷健檢服務。適合在職、喜歡自己掌握進度的人。</h4>
+    <p>前往課程 ></p>
+    </div>
+    <div class="item"> <img src="img/img-06.png" alt="">
+    <h3>全方位培訓營</h3>
+    <h4>課程包含 Git / HTML / JavaScript / Ruby on Rails 適合在職或希望利用假日上課的人。</h4> 
+    <p>前往課程 ></p>
+    </div>
+    <div class="item"> <img src="img/img-07.png" alt="">
+    <h3>三個月實戰轉職全端工程師</h3>
+    <h4>除了提供前端到後端課程外，課程期間還包含履歷健檢、模擬面試、專題製作、企業交流等服務。適合有時間決心轉職工程師的素人。</h4>
+    <p>前往課程 ></p>
+    </div>
+  </div>
+</div>
+
+<div class="feeback">
+  <h2>在五倍，我們一起超越五倍</h2>
+  <div class="wrap">
+  <div class="pic">網頁設計前後端的大咖老師都在這裡，教學更是不厭其煩，非常認真感謝 Rails 龍哥，JavaScript 的 Kuro 老師，CSS 魔法師 Amos
+  <p></p> 王小明
+  </div>
+  <div class="pic">五倍推出的全端課程，是網頁初學者入門學習最好的地方。除了老師教學經驗豐富，助教親切指導解決疑惑外，還有有趣的發卡獎勵機制，鼓勵同學努力學習，值得五星推薦。
+    <p></p> 陳小華
+  </div>
+  <div class="pic">老師跟課程助教都很有耐心協助解決學生的疑問，有興趣學寫程式的新手，會有不少收穫！
+    <p></p> 林小夜
+  </div>
+  <div class="pic">有貓就給讚！(欸 不是啦😂 環境很舒適，工作人員待人親切熱情 重點是講師很讚～觀念解釋相當清楚易懂，非常適合入門👍🏻👍🏻👍🏻
+    <p></p>李曉輝
+  </div>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="wrap">
+    <div class="item">
+      <p>五倍紅寶石・專業程式教育</p>
+      <p>電話 | (02) 2331-5247</p>
+      <p>信箱 | course@5xcampus.com</p>
+      <p>地址 | 10046 台北市中正區衡陽路 7 號 5 樓</p>
+    </div>
+
+    <div class="col">
+      <div class="col1">
+        <h2>專業課程</h2>
+        <p>全方位培訓營</p>
+        <p>ASTRO Camp</p>
+        <p>線上課程</p>
+        <p>短期課程</p>
+      </div>
+    <div class="col1">
+        <h2>關於我們</h2>
+        <p>關於五倍紅寶石</p>
+        <p>聯絡我們</p>
+      </div>
+   <div class="col1">
+        <h2>部落格</h2>
+        <p>專欄文章</p>
+        <p>最新消息</p>
+      </div>
+    <div class="col1">
+          <h2>幫助與政策</h2>
+          <p>常見問題</p>
+          <p>隱私權政策</p>
+          <p>服務條款</p>
+    </div>
+  </div>
+</div>
+</div>
+
+
+</body>
+</html>
