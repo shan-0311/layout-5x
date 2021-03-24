@@ -16,11 +16,12 @@ h1 {font-size: 60px;
     font-weight: bold;
 }
 
-h2 {font-size: 30px;
-    color: rgb(63, 64, 66);
-    line-height: 70px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: bold;}
+h2 {
+  font-size: 30px;
+  color: rgb(63, 64, 66);
+  line-height: 70px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;}
 
 .header{
   width:100%;
@@ -53,6 +54,7 @@ h2 {font-size: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20px;
     color: rgb(0, 0, 0);
+    text-decoration: none;
   }
 
   .banner img{
@@ -70,7 +72,20 @@ h2 {font-size: 30px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.about{text-align: center;
+.banner input{
+  padding: 15px 30px;
+  background-color: red;
+  border-radius: 5px;
+  color: #fff;
+  margin-top: 100px;
+  font-size: 18px;
+  border: 0;
+}
+
+
+
+.about{
+  text-align: center;
   line-height: 40px;
 
 }
@@ -82,14 +97,15 @@ h2 {font-size: 30px;
 
 .about .wrap{
   display: flex;
+  justify-content: center;
+  margin: auto;
 }
 .about img{
-  width: 50%;
-  padding-top: 40px;
+  width:30%;
 }
 
 .about .item{
-  text-align: center;
+padding-top: 30px;
 }
 
 .about .wrap h3{
@@ -110,33 +126,37 @@ h2 {font-size: 30px;
   margin-bottom: 200px;
 }
 .teacher{
-background-color: rgb(247, 247, 247);
-height: 200px;
-padding-right: 300px;
+  margin: auto;
+  text-align: center;
+  display: block;
+  background-color: rgb(247, 247, 247);
+  height: 200px;
+  
 }
 
+
 .teacher h2{
-  padding-left: 300px;
   font-size: 30px;
   line-height: 80px;
+  padding-right: 1160px;
 }
 .teacher p{
-  padding-left: 300px;
   font-size: 20px;
   line-height: 30px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .container{
+  margin: auto;
   height: 600px;
   background-color: rgb(247, 247, 247);
 }
 .container .content{
   margin: auto;
   display: flex;
- width: 800px;
- height: 500px;
- background-color: rgb(255, 255, 255);
+  width: 800px;
+  height: 500px;
+  background-color: rgb(255, 255, 255);
   
 }
 
@@ -151,14 +171,14 @@ padding-right: 300px;
 }
 
 .container .content .txt{
-color: rgb(49, 50, 50);
-background-color: rgb(255, 255, 255);
- margin: auto;
- margin-top: 0px;
- text-align: left;
- line-height: 30px;
- padding-left: 20px;
- padding-right: 30px;
+  color: rgb(49, 50, 50);
+  background-color: rgb(255, 255, 255);
+  margin: auto;
+  margin-top: 0px;
+  text-align: left;
+  line-height: 30px;
+  padding-left: 20px;
+  padding-right: 30px;
 }
 .container .content .txt h2{
   font-size: 15px;
@@ -172,15 +192,20 @@ background-color: rgb(255, 255, 255);
 }
 
 .lesson1{
+  margin: auto;
   background-color:rgb(44, 44, 45) ;
+}
+.lesson1 .wrap{
+  display: flex;
+justify-content: center;
 }
 .lesson1 h4{
   color: rgb(255, 255, 255);
   font-size: 30px;
   line-height: 30px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding-top: 30px;
-  padding-left: 50px;
+  padding-top: 70px;
+  padding-left: 90px;
   font-weight: bold;
 }
 .lesson1  p{
@@ -190,16 +215,17 @@ background-color: rgb(255, 255, 255);
   line-height: 30px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding-top: 30px;
-  padding-left: 50px;
+  padding-left: 90px;
   
 }
 
 
 .lesson1 .wrap .item2{
-  margin-left: 700px;
   background-color: rgb(228, 42, 22);
   width: 600px;
   height: 200px;
+  margin-top: 150px;
+  margin-left: 90px;
 } 
 
 .lesson1 h5{
@@ -207,12 +233,12 @@ background-color: rgb(255, 255, 255);
   font-size: 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding-top: 30px;
-  padding-left: 50px;
+  padding-left: 30px;
 }
+
 
 .lesson2 .wrap {
   height: 600px;
-  padding-top: 80px;
   background-color:rgb(44, 44, 45) ;
   display: flex;
 }
@@ -221,9 +247,11 @@ background-color: rgb(255, 255, 255);
   padding-left: 22px;
 }
 
-.lesson2 p{
-  padding-left:80px;
+.lesson2  p{
+  text-align: center;
   background-color: rgb(44, 44, 45);
+  padding-top: 70px;
+  padding-right: 1190px;
   font-size: 28px;
   color: rgb(255, 255, 255);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -253,31 +281,27 @@ background-color: rgb(255, 255, 255);
 }
 
 .lesson2 .wrap .item .pic{
-  background-color: rgb(255, 255, 255);
+  background-color: #fff;
   height: 400px;
   margin: 10px;
   border-radius: 20px;
 }
 
 .lesson2 .wrap .item .pic img {
-  width:430px;
+  width: 30%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-
-.txt{
-  margin-left: 580px;
-  margin-right: 700px;
-  height: 50px;
-  line-height: 50px;
-  color: rgb(255, 255, 255);
-  font-size: 22px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: bold;
+.lesson2 input{
   background-color: red;
+  border: 0;
+  margin-top: 200px;
   text-align: center;
-  border-radius: 10px;
-  }
+  color: #fff;
+  padding: 15px 10px;
+  border-radius: 5px;
+  font-size: 16px;
+}
 
 
 
@@ -285,15 +309,16 @@ background-color: rgb(255, 255, 255);
   display: flex;  
   background-color: rgb(255, 255, 255);
   height: 500px;
+  justify-content: center;
 }
 
 .path .wrap .item{
   height: 400px;
+  width:300px;
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
   margin:10px;
   padding: 0px;
-  width:100%;
   border: 0.5px solid rgb(187, 187, 187);
 }
 
@@ -304,21 +329,18 @@ background-color: rgb(255, 255, 255);
 .path .wrap .item p{
   color: red;
   font-size: 16px;
-  line-height: 80px;
-  padding-left: 23px;
 }
 
 .path h2{
-  padding-left: 50px;
+  padding-right: 1100px;
+  text-align: center;
 }
 
 .path p{
-  padding-left: 50px;
-  font-size: 20px;
+  font-size: 16px;
   color: rgb(63, 64, 66);
   background-color: rgb(255, 255, 255);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
 }
 
 
@@ -330,11 +352,9 @@ background-color: rgb(255, 255, 255);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .path h4{
-  font-size: 16px;
   color: rgb(63, 64, 66);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding-left: 50px;  
-  padding-right: 100px ;
+  padding-right: 20px ; 
 }
 
 
@@ -367,8 +387,14 @@ background-color: rgb(255, 255, 255);
   width: 700px;
   line-height: 40px;
 }
+
+.footer .wrap{
+  display: flex;
+  justify-content: center;
+}
+
 .footer .wrap .item p{
-    font-size: 15px;
+  font-size: 15px;
   }
 .footer .wrap .col{
   width: 600px;
@@ -412,6 +438,7 @@ background-color: rgb(255, 255, 255);
 
     <div class="item"><h1>五倍學習，突破你的可能性</h1>
     <p>掌握實戰經驗，從初心素人到業界接軌，讓專業師資為你重新定義程式教育。</p>
+    <input type="button" value="立即選課">
     </div>
   </div>
 
@@ -475,30 +502,30 @@ background-color: rgb(255, 255, 255);
   <p>近期課程</p>
   <div class="wrap">
     <div class="item">
-    <div class="pic"> <img src="img/img-09.jpg" alt=""> 
-    <h3>2021/4月班 2021/10月班</h3>
-    <h4>講師：李建杭（Amos Lee）</h4>
-    <h5>入門課程 ></h5>
+      <div class="pic"> <img src="img/img-09.jpg" alt=""> 
+      <h3>2021/4月班 2021/10月班</h3>
+      <h4>講師：李建杭（Amos Lee）</h4>
+      <h5>入門課程 ></h5>
     </div>
-  </div>
+
   <div class="item">
     <div class="pic"> <img src="img/img-10.jpg" alt="">
     <h3>2021/5月班</h3>
     <h4>講師：李建杭（Amos Lee）</h4> 
     <h5>入門課程 ></h5>
-    </div>
   </div>
+  
     <div class="item">
       <div class="pic"> <img src="img/img-11.jpg" alt="">
-    <h3>2021/5月班</h3>
-    <h4>講師：許國政（Kuro Hsu）</h4>
-    <h5>進階課程 ></h5>
-    
-  </div>
+      <h3>2021/5月班</h3>
+      <h4>講師：許國政（Kuro Hsu）</h4>
+      <h5>進階課程 ></h5>
+      <input type="botton" value="看更多課程">
+    </div>
   </div> 
-  
- </div>
-<div class="txt">看更多課程</div> 
+</div>
+
+
   
 
 <div class="path">
@@ -506,19 +533,19 @@ background-color: rgb(255, 255, 255);
   <p>針對不同需求的學員，五倍規劃了多元且完整的學習路徑：從前端到後端，全方面的包套課程，與彈性的線上課程、假日班，任您自由選擇。</p>
   <div class="wrap">
     <div class="item"> <img src="img/img-05.png" alt=""> 
-    <h3>線上課程</h3>
-    <h4>不限時間、地點，自己掌握學習進度。課程內容包含前後端課程，附加完課即提供免費履歷健檢服務。適合在職、喜歡自己掌握進度的人。</h4>
-    <p>前往課程 ></p>
+      <h3>線上課程</h3>
+      <h4>不限時間、地點，自己掌握學習進度。課程內容包含前後端課程，附加完課即提供免費履歷健檢服務。適合在職、喜歡自己掌握進度的人。</h4>
+      <p>前往課程 ></p>
     </div>
     <div class="item"> <img src="img/img-06.png" alt="">
-    <h3>全方位培訓營</h3>
-    <h4>課程包含 Git / HTML / JavaScript / Ruby on Rails 適合在職或希望利用假日上課的人。</h4> 
-    <p>前往課程 ></p>
+      <h3>全方位培訓營</h3>
+      <h4>課程包含 Git / HTML / JavaScript / Ruby on Rails 適合在職或希望利用假日上課的人。</h4> 
+      <p>前往課程 ></p>
     </div>
     <div class="item"> <img src="img/img-07.png" alt="">
-    <h3>三個月實戰轉職全端工程師</h3>
-    <h4>除了提供前端到後端課程外，課程期間還包含履歷健檢、模擬面試、專題製作、企業交流等服務。適合有時間決心轉職工程師的素人。</h4>
-    <p>前往課程 ></p>
+      <h3>三個月實戰轉職全端工程師</h3>
+      <h4>除了提供前端到後端課程外，課程期間還包含履歷健檢、模擬面試、專題製作、企業交流等服務。適合有時間決心轉職工程師的素人。</h4>
+      <p>前往課程 ></p>
     </div>
   </div>
 </div>
